@@ -5,7 +5,6 @@ use App\Models\Country;
 use App\Models\CountryStatistic;
 use \GuzzleHttp\Client;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Log;
 
 class FillCountryStatisticsDb extends Command
 {

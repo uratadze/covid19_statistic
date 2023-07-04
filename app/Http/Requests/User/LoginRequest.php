@@ -3,9 +3,6 @@
 namespace App\Http\Requests\User;
 
 use App\Http\Requests\Request;
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Http\Exceptions\HttpResponseException;
-use Illuminate\Http\Response;
 
 class LoginRequest extends Request
 {

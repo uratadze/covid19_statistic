@@ -34,8 +34,8 @@ class CountryStatistic extends Model
             'recovered' => $statistics->pluck('recovered')->sum(),
             'critical' => $statistics->pluck('critical')->sum(),
             'deaths' => $statistics->pluck('deaths')->sum(),
-            'created_at' => $statistics->first()->created_at,
-            'updated_at' => $statistics->first()->updated_at
+            'created_at' => $statistics->first()->created_at ?? null,
+            'updated_at' => $statistics->first()->updated_at ?? null
         ];
     }
 
